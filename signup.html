@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container" id="container">
+        <div class="rightSide">
+          <div class="close">
+            <button class="btnClose" onclick="btnClose()">X</button>
+        </div>
+            <h1>Signup Form</h1>
+        </div>
+        <div class="form" id="form">
+          <h1>Sign up</h1>
+          <div class="inputs">
+            <div class="input">
+              <input type="text" placeholder="Full Name" id="name" />
+            </div>
+
+            <div class="input">
+              <input type="email" placeholder="E-mail" id="email" />
+            </div>
+
+            <div class="input">
+              <input type="password" placeholder="Password" id="password" />
+              <i class="fa-regular fa-eye-slash" id="tooglePassword" onclick="togglePassword()"></i>
+            </div>
+          </div>
+
+          <p>already have an account? <a href="./signin.html">Sign in</a></p>
+
+          <div class="btn">
+            <button class="button2" onclick="signUp()">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
